@@ -62,7 +62,12 @@ export default function AboutSection() {
                 {education.map((edu, index) => (
                   <div
                     key={index}
-                    className="relative pl-6 border-l-2 border-primary/30"
+                    className={`relative pl-6 border-l-2 border-primary/30 transition-all duration-500 ${
+                      isVisible
+                        ? "opacity-100 translate-x-0"
+                        : "opacity-0 -translate-x-4"
+                    }`}
+                    style={{ transitionDelay: `${300 + index * 150}ms` }}
                     data-testid={`education-${index}`}
                   >
                     <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background" />

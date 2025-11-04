@@ -9,13 +9,22 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      title: "E-Nirikshan",
+      description: "E-Nirakshan App is an online productivity monitoring tool designed for government offices to enhance efficiency and engagement. It helps set goals, track progress, and evaluate performance at organizational, team, and individual levels. The app bridges the management gap under the e-Office platform, fostering measurable productivity improvement.",
+      tech: ["React", "Node.js", "MongoDB", "REST APIs", "Performance Analytics"],
+      liveLink: "https://e-nirikshan.vercel.app/home",
+      githubLink: "https://github.com/Neo-04/e-Nirikshan",
+      date: "Oct 2025",
+      gradient: "from-primary/20 to-accent/20",
+    },
+    {
       title: "SafeTrail",
       description: "Built an application with an AI chatbot, danger zone alerts, and lost & found system to enhance safety and convenience for tourists in Northeast India",
       tech: ["React", "AI/ML", "Firebase", "Geolocation"],
       liveLink: "https://safetrail-2.onrender.com/",
       githubLink: "https://github.com/ifrashadab",
       date: "Sept 2025",
-      gradient: "from-primary/20 to-accent/20",
+      gradient: "from-accent/20 to-secondary/20",
     },
     {
       title: "Sahara - Emergency SOS",
@@ -24,7 +33,7 @@ export default function ProjectsSection() {
       liveLink: null,
       githubLink: "https://github.com/niyati2912/sahara-codex",
       date: "Aug 2025",
-      gradient: "from-accent/20 to-secondary/20",
+      gradient: "from-secondary/20 to-primary/20",
     },
   ];
 

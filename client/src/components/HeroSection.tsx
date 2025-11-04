@@ -84,7 +84,7 @@ export default function HeroSection() {
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground">
-              Hey, I'm <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">Ifra</span> 👋
+              hey, i am <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">ifra shadab</span> 👋
             </h1>
             
             <div className="h-12 md:h-16">
