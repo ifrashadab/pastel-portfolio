@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Code } from "lucide-react";
 import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_1762287346131.jpeg";
+
+export default function HeroSection() {
+  const [displayText, setDisplayText] = useState("");
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+
   const phrases = [
     "Electrical Engineer",
     "AI & Cybersecurity Enthusiast",
@@ -12,7 +16,7 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
   useEffect(() => {
     let charIndex = 0;
     const currentPhrase = phrases[currentPhraseIndex];
-    
+
     const typingInterval = setInterval(() => {
       if (charIndex <= currentPhrase.length) {
         setDisplayText(currentPhrase.slice(0, charIndex));
@@ -49,7 +53,7 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95" />
       </div>
-      
+
       <div className="absolute inset-0 opacity-20">
         {[...Array(20)].map((_, i) => (
           <div
@@ -81,9 +85,13 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground">
-              Hey, I am <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">Ifra Shadab</span> 👋
+              Hey, I am{" "}
+              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                Ifra Shadab
+              </span>{" "}
+              👋
             </h1>
-            
+
             <div className="h-12 md:h-16">
               <p className="text-xl md:text-3xl font-medium text-muted-foreground">
                 {displayText}
@@ -121,7 +129,9 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
               size="icon"
               variant="ghost"
               className="rounded-full hover-elevate active-elevate-2"
-              onClick={() => window.open("https://github.com/ifrashadab", "_blank")}
+              onClick={() =>
+                window.open("https://github.com/ifrashadab", "_blank")
+              }
               data-testid="link-github"
             >
               <Github className="h-5 w-5" />
@@ -130,7 +140,12 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
               size="icon"
               variant="ghost"
               className="rounded-full hover-elevate active-elevate-2"
-              onClick={() => window.open("https://in.linkedin.com/in/ifra-shadab-913359285", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://in.linkedin.com/in/ifra-shadab-913359285",
+                  "_blank"
+                )
+              }
               data-testid="link-linkedin"
             >
               <Linkedin className="h-5 w-5" />
@@ -139,7 +154,9 @@ import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_17
               size="icon"
               variant="ghost"
               className="rounded-full hover-elevate active-elevate-2"
-              onClick={() => window.open("https://leetcode.com/u/ifrashadab/", "_blank")}
+              onClick={() =>
+                window.open("https://leetcode.com/u/ifrashadab/", "_blank")
+              }
               data-testid="link-leetcode"
             >
               <Code className="h-5 w-5" />
