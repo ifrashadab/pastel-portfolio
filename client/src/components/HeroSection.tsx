@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Code } from "lucide-react";
-import profileImage from "@assets/generated_images/Professional_portfolio_headshot_d1412627.png";
+import profileImage from "@assets/WhatsApp Image 2025-11-05 at 1.40.52 AM (2)_1762287346131.jpeg";
 
 export default function HeroSection() {
   const [displayText, setDisplayText] = useState("");
@@ -44,9 +44,16 @@ export default function HeroSection() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       data-testid="section-hero"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 animate-gradient" />
+      <div className="absolute inset-0">
+        <img
+          src={profileImage}
+          alt="Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95" />
+      </div>
       
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-20">
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
@@ -66,11 +73,11 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-20 relative z-10">
         <div className="flex flex-col items-center text-center space-y-8">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity" />
             <img
               src={profileImage}
               alt="Ifra Shadab"
-              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-white shadow-2xl relative z-10"
+              className="w-56 h-56 md:w-72 md:h-72 rounded-2xl object-cover border-4 border-white/50 shadow-2xl relative z-10 backdrop-blur-sm"
               data-testid="img-profile"
             />
           </div>

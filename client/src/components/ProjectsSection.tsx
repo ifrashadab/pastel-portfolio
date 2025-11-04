@@ -26,15 +26,6 @@ export default function ProjectsSection() {
       date: "Aug 2025",
       gradient: "from-accent/20 to-secondary/20",
     },
-    {
-      title: "Portfolio Website",
-      description: "Created a personal portfolio (HTML, CSS, JS) to showcase projects and skills. Deployed on GitHub Pages with version control",
-      tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-      liveLink: "https://github.com/ifrashadab/ifra.portfolio",
-      githubLink: "https://github.com/ifrashadab/ifra.portfolio",
-      date: "June 2025",
-      gradient: "from-secondary/20 to-primary/20",
-    },
   ];
 
   return (

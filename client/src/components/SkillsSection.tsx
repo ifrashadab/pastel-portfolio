@@ -13,22 +13,51 @@ export default function SkillsSection() {
     programming: {
       icon: Code,
       title: "Programming",
-      skills: ["C", "C++", "Python", "MATLAB", "HTML", "CSS", "JavaScript", "OOPs", "Multithreading"],
+      skills: [
+        { name: "C", level: 85 },
+        { name: "C++", level: 90 },
+        { name: "Python", level: 88 },
+        { name: "JavaScript", level: 85 },
+        { name: "MATLAB", level: 75 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "OOPs", level: 85 },
+        { name: "Multithreading", level: 70 },
+      ],
     },
     networking: {
       icon: Network,
       title: "Networking",
-      skills: ["TCP/IP", "Routing", "Switching", "Subnetting", "LAN/WAN", "OSI Model", "SDN"],
+      skills: [
+        { name: "TCP/IP", level: 80 },
+        { name: "Routing", level: 75 },
+        { name: "Switching", level: 75 },
+        { name: "Subnetting", level: 80 },
+        { name: "LAN/WAN", level: 78 },
+        { name: "OSI Model", level: 85 },
+        { name: "SDN", level: 70 },
+      ],
     },
     cybersecurity: {
       icon: Shield,
       title: "Cybersecurity",
-      skills: ["Threat Modeling", "Cryptography", "Secure Coding", "Incident Response"],
+      skills: [
+        { name: "Threat Modeling", level: 80 },
+        { name: "Cryptography", level: 85 },
+        { name: "Secure Coding", level: 82 },
+        { name: "Incident Response", level: 75 },
+      ],
     },
     tools: {
       icon: Wrench,
       title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "REST APIs", "Agile/Scrum", "Cloud Computing", "Docker"],
+      skills: [
+        { name: "Git & GitHub", level: 90 },
+        { name: "REST APIs", level: 85 },
+        { name: "Agile/Scrum", level: 80 },
+        { name: "Cloud Computing", level: 70 },
+        { name: "Docker", level: 65 },
+        { name: "Firebase", level: 82 },
+      ],
     },
   };
 
@@ -79,10 +108,10 @@ export default function SkillsSection() {
             {Object.entries(skillCategories).map(([key, category]) => (
               <TabsContent key={key} value={key} className="mt-0">
                 <Card className="p-6 md:p-8 backdrop-blur-md bg-card/80 border-card-border">
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  <div className="grid md:grid-cols-2 gap-6">
                     {category.skills.map((skill, index) => (
                       <div
-                        key={skill}
+                        key={skill.name}
                         className={`transition-all duration-500 ${
                           isVisible
                             ? "opacity-100 translate-y-0"
@@ -90,13 +119,22 @@ export default function SkillsSection() {
                         }`}
                         style={{ transitionDelay: `${index * 50}ms` }}
                       >
-                        <Badge
-                          variant="secondary"
-                          className="w-full justify-center py-3 px-4 text-sm hover-elevate active-elevate-2 cursor-default"
-                          data-testid={`skill-${skill.toLowerCase().replace(/\s+/g, '-')}`}
-                        >
-                          {skill}
-                        </Badge>
+                        <div className="space-y-2">
+                          <div className="flex justify-between items-center">
+                            <span className="font-medium text-sm">{skill.name}</span>
+                            <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                          </div>
+                          <div className="h-2 bg-muted rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-gradient-to-r from-primary via-accent to-secondary transition-all duration-1000 ease-out"
+                              style={{ 
+                                width: isVisible ? `${skill.level}%` : "0%",
+                                transitionDelay: `${index * 100}ms`
+                              }}
+                              data-testid={`skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
+                            />
+                          </div>
+                        </div>
                       </div>
                     ))}
                   </div>

@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Briefcase, Users, Heart } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
@@ -102,22 +103,47 @@ export default function ExperienceSection() {
             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >
-          <Card className="p-6 md:p-8 backdrop-blur-md bg-card/80 border-card-border text-center">
-            <h3 className="text-xl font-heading font-semibold mb-3">
-              Extra-Curricular Activities
-            </h3>
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🏀</span>
-                <span>Basketball - School Level Competitions</span>
+          <h3 className="text-2xl md:text-3xl font-heading font-semibold mb-6 text-center">
+            Extra-Curricular Activities
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="p-6 backdrop-blur-md bg-card/80 border-card-border hover-elevate overflow-visible">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">🏀</span>
+                </div>
+                <div>
+                  <h4 className="font-heading font-semibold mb-2">Basketball Athlete</h4>
+                  <p className="text-muted-foreground text-sm mb-2">
+                    Competed in interschool tournaments at school level
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-xs">Teamwork</Badge>
+                    <Badge variant="secondary" className="text-xs">Leadership</Badge>
+                    <Badge variant="secondary" className="text-xs">Competitive Spirit</Badge>
+                  </div>
+                </div>
               </div>
-              <span className="hidden md:inline">•</span>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">⚡</span>
-                <span>NSUT Electrical Girls' Team - Winter Sports Tournament</span>
+            </Card>
+
+            <Card className="p-6 backdrop-blur-md bg-card/80 border-card-border hover-elevate overflow-visible">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <div>
+                  <h4 className="font-heading font-semibold mb-2">NSUT Sports Representative</h4>
+                  <p className="text-muted-foreground text-sm mb-2">
+                    Represented Electrical Engineering Girls' Team in Winter Sports Interbranch Tournament
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-xs">Team Sports</Badge>
+                    <Badge variant="secondary" className="text-xs">University Level</Badge>
+                  </div>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
