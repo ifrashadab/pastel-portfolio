@@ -1,0 +1,153 @@
+ADVANCED PORTFOLIO GENERATION PROMPT (For Ifra Shadab)
+
+Create a futuristic, interactive, and professional portfolio website for Ifra Shadab, a B.Tech Electrical Engineering student (2023–2027) at NSUT Delhi, passionate about AI/ML, Cybersecurity, and Innovation.
+
+🧠 TECH STACK
+
+Use Next.js + Tailwind CSS + Framer Motion + TypeScript.
+Include React Three Fiber or Vanta.js for animated 3D/particle backgrounds.
+
+🎨 DESIGN STYLE
+
+Theme: Futuristic x Minimal x Professional
+
+Effects: Glassmorphism, Neon gradients, Soft shadows, Smooth parallax scrolling
+
+Primary colors: Electric Blue (#007AFF), Violet (#8B5CF6), Deep Navy (#0F172A), White (#F8FAFC)
+
+Fonts: Poppins (headings) + Inter (body)
+
+Include dark/light mode toggle
+
+⚙️ STRUCTURE & ANIMATIONS
+1. Navbar
+
+Sticky top navbar with glowing scroll highlight
+
+Animated logo: “IFRA ⚡”
+
+Smooth scroll transitions
+
+2. Hero Section
+
+Animated typing intro:
+“Hey, I’m Ifra 👋”
+“Electrical Engineer | AI & Cybersecurity Enthusiast | Innovator”
+
+Background: interactive gradient or particle effect
+
+Floating neon CTA buttons: “View My Projects” / “Download Resume”
+
+3. About Me
+
+Split layout: profile photo + animated text reveal
+
+Include education timeline:
+
+NSUT Delhi (EE, 2023–27) – CGPA 7.83
+
+Balvantray Mehta Vidya Bhawan (XII – 89%)
+
+Balvantray Mehta Vidya Bhawan (X – 91%)
+
+4. Skills
+
+Tabs for:
+
+Programming (C, C++, Python, MATLAB, JS, OOPs, Multithreading)
+
+Networking (TCP/IP, SDN, Subnetting, OSI Model)
+
+Cybersecurity (Threat Modeling, Cryptography, Incident Response)
+
+Tools (Git, REST APIs, Docker, Cloud, Agile)
+
+Animated circular progress or skill bar with motion reveal
+
+5. Projects Section
+
+Interactive 3D project cards with hover/flip effects
+
+Include:
+
+SafeTrail – AI chatbot, danger alerts for tourists (Live + GitHub link)
+
+Sahara – SOS + AI medical chatbot (React + Firebase)
+
+Portfolio Website – HTML/CSS/JS version on GitHub
+
+On-click modal with full description + tech stack
+
+6. Achievements & Certifications
+
+Horizontal scroll timeline (Framer Motion)
+
+Include:
+
+CodeX 2.0 Hackathon – Top 50 / 700+ teams
+
+Cisco Networking Academy – Cybersecurity (May 2025)
+
+She Codes Scholarship
+
+NPTEL: Innovation, Business & Entrepreneurship, Design Thinking (80 percentile)
+
+7. Experience
+
+Encryptix Internship (C++) – 5 projects, debugging & problem-solving
+
+Women Security Team, Moksha Fest (2025) – Event safety, emergency coordination
+
+NSS Volunteer, NSUT – Polling booth assistance, career sessions
+
+8. Extra-Curricular
+
+Basketball (School-level + NSUT Interbranch Tournament)
+
+9. Contact Section
+
+Animated form (EmailJS / Formspree)
+
+Social icons (LinkedIn, GitHub, LeetCode) with hover glow
+
+Floating particles or wave background
+
+10. Footer
+
+“Built with ❤️ by Ifra Shadab”
+
+Animated icons, smooth scroll to top
+
+🌐 LINKS TO INCLUDE
+
+LinkedIn: https://in.linkedin.com/in/ifra-shadab-913359285
+
+GitHub: https://github.com/ifrashadab
+
+LeetCode: https://leetcode.com/u/ifrashadab/
+
+Projects:
+
+SafeTrail → https://safetrail-2.onrender.com/
+
+Sahara → https://github.com/niyati2912/sahara-codex
+
+Portfolio → https://github.com/ifrashadab/ifra.portfolio
+
+⚡ EXTRA FEATURES
+
+Parallax scroll
+
+Lazy loading for images
+
+SEO meta setup
+
+Floating “Back to Top” button
+
+Optional AI chat assistant for portfolio visitors
+
+Deliverable:
+
+Fully functional, deployable Next.js portfolio with modular components and commented animation logic.
+
+Optimized for all devices and browsers.
