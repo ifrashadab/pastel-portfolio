@@ -24,14 +24,14 @@ Include dark/light mode toggle
 
 Sticky top navbar with glowing scroll highlight
 
-Animated logo: “IFRA ⚡”
+Animated logo: “IFRA SHADAB”
 
 Smooth scroll transitions
 
 2. Hero Section
 
 Animated typing intro:
-“Hey, I’m Ifra 👋”
+“Hey, I’m Ifra Shadab👋”
 “Electrical Engineer | AI & Cybersecurity Enthusiast | Innovator”
 
 Background: interactive gradient or particle effect
@@ -74,7 +74,7 @@ SafeTrail – AI chatbot, danger alerts for tourists (Live + GitHub link)
 
 Sahara – SOS + AI medical chatbot (React + Firebase)
 
-Portfolio Website – HTML/CSS/JS version on GitHub
+E-nirakshan - (Live + Github link)
 
 On-click modal with full description + tech stack
 
@@ -132,7 +132,7 @@ SafeTrail → https://safetrail-2.onrender.com/
 
 Sahara → https://github.com/niyati2912/sahara-codex
 
-Portfolio → https://github.com/ifrashadab/ifra.portfolio
+E-nirakshan → https://github.com/Neo-04/e-Nirikshan
 
 ⚡ EXTRA FEATURES
 

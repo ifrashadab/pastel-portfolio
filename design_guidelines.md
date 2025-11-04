@@ -71,7 +71,7 @@ Container: max-w-7xl px-4 md:px-8
 
 ### Navigation
 - Sticky with `backdrop-blur-lg bg-white/70`
-- Logo: "IFRA ⚡" with gradient text
+- Logo: "IFRA SHADAB" with gradient text
 - Smooth scroll links with underline hover animation
 
 ### Hero Section
@@ -113,7 +113,7 @@ Container: max-w-7xl px-4 md:px-8
 **Featured:**
 1. SafeTrail: AI chatbot, danger alerts, lost & found
 2. Sahara: Emergency SOS, AI medical chatbot
-3. Portfolio: HTML/CSS/JS showcase
+3. E-Nirakshan
 
 ### Achievements Timeline
 - Horizontal scroll (mobile), horizontal timeline (desktop)

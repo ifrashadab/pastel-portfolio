@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Code } from "lucide-react";
-import profileImage from "@assets/WhatsApp Image 2025-11-05 at 1.40.52 AM (2)_1762287346131.jpeg";
-
-export default function HeroSection() {
-  const [displayText, setDisplayText] = useState("");
+import profileImage from "@assets/WhatsApp_Image_2025-11-05_at_1.40.52_AM_(2)_1762287346131.jpeg";
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const phrases = [
     "Electrical Engineer",
@@ -84,7 +81,7 @@ export default function HeroSection() {
 
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-foreground">
-              hey, i am <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">ifra shadab</span> 👋
+              Hey, I am <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">Ifra Shadab</span> 👋
             </h1>
             
             <div className="h-12 md:h-16">
@@ -95,7 +92,7 @@ export default function HeroSection() {
             </div>
 
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              B.Tech Electrical Engineering @ NSUT Delhi • Passionate about building innovative solutions with AI/ML and Cybersecurity
+              B.Tech Electrical Engineering @ NSUT Delhi
             </p>
           </div>
 

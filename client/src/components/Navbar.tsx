@@ -45,7 +45,7 @@ export default function Navbar() {
             className="text-xl md:text-2xl font-heading font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent"
             data-testid="link-logo"
           >
-            IFRA ⚡
+            IFRA SHADAB
           </button>
 
           <div className="hidden md:flex items-center gap-1">
